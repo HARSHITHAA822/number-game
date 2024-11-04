@@ -1,0 +1,16 @@
+  import random
+
+answer=random.randrange(1,100)
+chance=0
+while chance < 5:
+  guess=int(input("guess a number between 1 and 100 : "))
+  if guess==answer:
+    print("congragulations!!!you won the game")
+  if guess < answer:
+    print("go higher")
+  if guess > answer:
+    print("go lower")
+    
+  chance+=1
+  if chance==5:
+    print("the game over and the answer was:",answer)   
